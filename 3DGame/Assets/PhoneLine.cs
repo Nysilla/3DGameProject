@@ -1,8 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PhoneLine : MonoBehaviour
 {
     public Transform TargetLine;
+    public float PhoneLineDrip = 0.1f;
     public Transform[] Spokes;
     public Transform[] TargetSpokes;
     void Start()
@@ -16,6 +18,7 @@ public class PhoneLine : MonoBehaviour
         {
             Spokes[i].GetComponent<LineRenderer>().SetPosition(0, Spokes[i].position);
             Spokes[i].GetComponent<LineRenderer>().SetPosition(1, Spokes[i].position);
+            Spokes[i].GetComponent<LineRenderer>().SetPosition(2, Spokes[i].position);
         }
         if (TargetLine == null) { return; }
         Transform Spokes1 = TargetLine.Find("Spokes");
@@ -26,7 +29,10 @@ public class PhoneLine : MonoBehaviour
 
         for (int i = 0; i < 4; i++)
         {
-            Spokes[i].GetComponent<LineRenderer>().SetPosition(1, TargetSpokes[i].position);
+            Vector3 AveragePosition = Spokes[i].position + TargetSpokes[i].position;
+            AveragePosition /= 2;
+            Spokes[i].GetComponent<LineRenderer>().SetPosition(1, AveragePosition + (Vector3.down * PhoneLineDrip));
+            Spokes[i].GetComponent<LineRenderer>().SetPosition(2, TargetSpokes[i].position);
         }
     }
 }
