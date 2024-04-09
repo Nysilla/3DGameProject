@@ -5,6 +5,7 @@ public class PhoneLine : MonoBehaviour
 {
     public Transform TargetLine;
     public float PhoneLineDrip = 0.1f;
+    public float DistanceEffect = 0.1f;
     public Transform[] Spokes;
     public Transform[] TargetSpokes;
     void Start()
@@ -21,6 +22,7 @@ public class PhoneLine : MonoBehaviour
             Spokes[i].GetComponent<LineRenderer>().SetPosition(2, Spokes[i].position);
         }
         if (TargetLine == null) { return; }
+        float Distance = Vector3.Distance(transform.position, TargetLine.position);
         Transform Spokes1 = TargetLine.Find("Spokes");
         TargetSpokes[0] = Spokes1.Find("Spoke1");
         TargetSpokes[1] = Spokes1.Find("Spoke2");
@@ -31,7 +33,7 @@ public class PhoneLine : MonoBehaviour
         {
             Vector3 AveragePosition = Spokes[i].position + TargetSpokes[i].position;
             AveragePosition /= 2;
-            Spokes[i].GetComponent<LineRenderer>().SetPosition(1, AveragePosition + (Vector3.down * PhoneLineDrip));
+            Spokes[i].GetComponent<LineRenderer>().SetPosition(1, AveragePosition + (Vector3.down * (PhoneLineDrip + (Distance * DistanceEffect))));
             Spokes[i].GetComponent<LineRenderer>().SetPosition(2, TargetSpokes[i].position);
         }
     }
