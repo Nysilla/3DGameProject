@@ -9,7 +9,7 @@ public class MainMenuManager : MonoBehaviour
     public void PlayGame()
     {
         Birb.SetBool("FlyingAway", true);
-        Invoke("NextLevel", 0.5f);
+        Invoke("NextLevel", 4f);
     }
     void NextLevel()
     {
