@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/OutdoorsScene.unity
+    path: Assets/MainMenu.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
-  - enabled: 1
+  - enabled: 0
     path: Assets/XT_scene.unity
     guid: dfb30c25d9911b24d93d84253700c06a
+  - enabled: 1
+    path: Assets/WeaponsTesting.unity
+    guid: c15b5e47dcb64ca429050cca6a498fec
   m_configObjects: {}
