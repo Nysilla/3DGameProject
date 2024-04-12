@@ -15,15 +15,15 @@ MonoBehaviour:
   active: 0
   enable:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   layerMask:
     m_OverrideState: 1
     m_Value:
       serializedVersion: 2
-      m_Bits: 23
+      m_Bits: 4294967295
   maximumSamples:
     m_OverrideState: 1
-    m_Value: 128
+    m_Value: 1
   minimumDepth:
     m_OverrideState: 1
     m_Value: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Value: 1
   skyImportanceSampling:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   tilingParameters:
     m_OverrideState: 0
     m_Value: {x: 1, y: 1, z: 0, w: 0}
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1984a7ac01bf84b86559f7595cdc68, type: 3}
   m_Name: LightCluster
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   cameraClusterRange:
     m_OverrideState: 1
     m_Value: 10
