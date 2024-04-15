@@ -10883,7 +10883,7 @@ MonoBehaviour:
     m_Bits: 8
   AudioSource1: {fileID: 4251062404958824454}
   AudioSource2: {fileID: 754223557888478042}
-  AttackDelay: 0
+  AttackDelay: 0.75
 --- !u!95 &4505907237635694688
 Animator:
   serializedVersion: 5

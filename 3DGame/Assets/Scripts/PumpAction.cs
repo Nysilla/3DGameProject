@@ -22,11 +22,11 @@ public class PumpAction : MonoBehaviour
     float nextTimeToFire;
     void Update()
     {
-        if (Time.time > nextTimeToFire)
+        if (Input.GetButtonDown("Fire1"))
         {
-            nextTimeToFire = Time.time + AttackDelay;
-            if (Input.GetButtonDown("Fire1"))
+            if (Time.time > nextTimeToFire)
             {
+                nextTimeToFire = Time.time + AttackDelay;
                 AudioSource1.PlayOneShot(AudioSource1.clip);
                 Delay();
                 ps.Play();
