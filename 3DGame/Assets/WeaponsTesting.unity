@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 9401.579, g: 10282.247, b: 10099.079, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1856,90 +1856,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 539494462753185697, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592722491021192142, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: clearColorMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592722491021192142, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: allowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592722491021192142, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: allowDeepLearningSuperSampling
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 592722491021192142, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: deepLearningSuperSamplingUseOptimalSettings
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 592722491021192142, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_RenderingPathCustomFrameSettings.bitDatas.data2
-      value: 13763000512515375128
-      objectReference: {fileID: 0}
-    - target: {fileID: 592722491021192142, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: renderingPathCustomFrameSettingsOverrideMask.mask.data1
-      value: 17205035008
-      objectReference: {fileID: 0}
-    - target: {fileID: 592722491021192142, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: renderingPathCustomFrameSettingsOverrideMask.mask.data2
-      value: 2415919104
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391215684996885607, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391215684996885607, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391215684996885607, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444184415551015699, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_RayTraceProcedural
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1951434826898894521, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1951434826898894521, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2311370902819173348, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096874021811126583, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096874021811126583, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5149208053550099589, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
         type: 3}
@@ -1991,86 +1911,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5179437924904409213, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5179437924904409213, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5179437924904409213, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5745321747625777827, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5745321747625777827, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6559737840912402964, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AllowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892395368828179574, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892395368828179574, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892395368828179574, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6927454704295470823, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
         type: 3}
       propertyPath: Rayvol
       value: 
       objectReference: {fileID: 1373698511}
-    - target: {fileID: 6927454704295470823, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: FPSSamples
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7218964316952426483, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7218964316952426483, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7218964316952426483, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8166159780000106372, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8166159780000106372, guid: 43e18f0b3385d0c4d8a525fcf4a8d20c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
