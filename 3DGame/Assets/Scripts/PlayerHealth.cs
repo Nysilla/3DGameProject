@@ -1,16 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     public float health;
+    public float maxHealth;
     public bool paused;
     public GameObject PauseMenu;
+    public GameObject Tools;
     private void Start()
     {
         Invoke("NoAnim", 1);
+        health = maxHealth;
     }
 
     private void Update()
@@ -24,6 +29,8 @@ public class PlayerHealth : MonoBehaviour
             else
                 Cursor.lockState = CursorLockMode.None;
 
+            Tools.SetActive(!paused);
+            Time.timeScale = Convert.ToInt32(!paused);
             PauseMenu.SetActive(paused);
         }
 

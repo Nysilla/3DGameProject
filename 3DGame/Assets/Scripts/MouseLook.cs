@@ -51,13 +51,13 @@ public class MouseLook : MonoBehaviour
         {
             return;
         }
-        float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * PlayerPrefs.GetInt("Sensitivity");
+        float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
 
-        rotationY += Input.GetAxisRaw("Mouse Y") * PlayerPrefs.GetInt("Sensitivity");
+        rotationY += Input.GetAxisRaw("Mouse Y") * sensitivityX;
         rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
 
         transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, transform.localEulerAngles.z);
-        PlayerBody.transform.Rotate(0, Input.GetAxisRaw("Mouse X") * PlayerPrefs.GetInt("Sensitivity"), 0);
+        PlayerBody.transform.Rotate(0, Input.GetAxisRaw("Mouse X") * sensitivityX, 0);
     }
 
     private void Start()
