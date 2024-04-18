@@ -15282,7 +15282,7 @@ MonoBehaviour:
   Gun: {fileID: 8870056237170748816}
   Rayvol: {fileID: 0}
   FPS: {fileID: 2817734427082747780}
-  FPSSamples: 0
+  FPSSamples: 30
 --- !u!1 &5607482527837659947
 GameObject:
   m_ObjectHideFlags: 0
