@@ -16,6 +16,10 @@ public class Settings_UI : MonoBehaviour
     private void Start()
     {
         VideoToggles[0].interactable = false; CheckForHDRSupport();
+        if (!HDDynamicResolutionPlatformCapabilities.DLSSDetected)
+        {
+            VideoToggles[3].interactable = false;
+        }
     }
 
     void Update()
@@ -63,6 +67,13 @@ public class Settings_UI : MonoBehaviour
                 HAL.SetShadowResolutionLevel(3);
                 break;
         }
+    }
+
+    public void SetDlss(bool Value)
+    {
+
+        HDAdditionalCameraData HDC = Camera.main.GetComponent<HDAdditionalCameraData>();
+        HDC.allowDeepLearningSuperSampling = Value;
     }
 
     public void SetDynamicResolution(bool Value)
