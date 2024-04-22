@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
     public bool paused;
     public GameObject PauseMenu;
     public GameObject Tools;
+    public bool BeingHealed;
+    public GameObject HealUI;
     private void Start()
     {
         Invoke("NoAnim", 1);
@@ -20,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
+        HealUI.SetActive(BeingHealed);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             paused = !paused;
