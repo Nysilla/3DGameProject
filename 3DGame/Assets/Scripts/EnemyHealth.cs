@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     public TextMeshPro TMP;
     public NavMeshAgent agent;
     public GameObject DeathParticles;
+    public float Targeted;
     private void Update()
     {
         if (health <= 0)

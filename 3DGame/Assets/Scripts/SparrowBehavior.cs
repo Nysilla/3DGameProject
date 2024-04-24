@@ -30,6 +30,7 @@ public class SparrowBehavior : MonoBehaviour
         Vector3 direction = Player.position - transform.position;
         transform.LookAt(Player.position);
         float distance = Vector3.Distance(transform.position, Player.position);
+        if (distance > 20) { return; }
         if (distance < 3)
         {
             if (Time.time > nextTimeToFire)

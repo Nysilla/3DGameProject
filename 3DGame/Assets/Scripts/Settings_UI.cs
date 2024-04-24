@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.NVIDIA;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Settings_UI : MonoBehaviour
 {
@@ -56,6 +57,17 @@ public class Settings_UI : MonoBehaviour
         Counter++;
 
         //FPS.text = "FPS: " + (1 / Time.deltaTime).ToString("0");
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(0);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 
     public void SetGunInvisible(bool Value)
