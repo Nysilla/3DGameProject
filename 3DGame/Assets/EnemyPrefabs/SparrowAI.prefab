@@ -630,6 +630,8 @@ MonoBehaviour:
   agent: {fileID: 0}
   DeathParticles: {fileID: 1789917420411110661, guid: 18d49b17fed363045a4ebcd687d9c314,
     type: 3}
+  Targeted: 0
+  MoneyValue: 1
 --- !u!136 &6135190436974780988
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,10 @@ public class PlayerHealth : MonoBehaviour
     public GameObject Tools;
     public bool BeingHealed;
     public GameObject HealUI;
+
+    public int Money;
+    public TextMeshProUGUI MoneyText;
+
     private void Start()
     {
         Invoke("NoAnim", 1);
@@ -22,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
+        MoneyText.text = "$" + Money.ToString();
         HealUI.SetActive(BeingHealed);
         if (Input.GetKeyDown(KeyCode.Escape))
         {

@@ -6,8 +6,10 @@ public class Spawner1 : MonoBehaviour
 {
     public GameObject[] PrefabPreview;
     public GameObject[] Prefabs;
+    public int[] Prices;
     public int ActiveTower;
     public GameObject ActiveInstantiate;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -32,9 +34,10 @@ public class Spawner1 : MonoBehaviour
         {
             if(ActiveInstantiate != null)
                 ActiveInstantiate.transform.position = hit.point;
-            if (Input.GetButtonDown("Fire2"))
+            if (Input.GetButtonDown("Fire2") && GetComponentInParent<PlayerHealth>().Money - Prices[ActiveTower] >= 0)
             {
                 Destroy(ActiveInstantiate);
+                GetComponentInParent<PlayerHealth>().Money -= Prices[ActiveTower];
                 Instantiate(Prefabs[ActiveTower], hit.point, Quaternion.identity);
             }
         }

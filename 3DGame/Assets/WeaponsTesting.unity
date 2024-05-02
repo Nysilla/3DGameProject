@@ -1746,6 +1746,8 @@ MonoBehaviour:
   TMP: {fileID: 332506371}
   agent: {fileID: 1318491032}
   DeathParticles: {fileID: 0}
+  Targeted: 0
+  MoneyValue: 0
 --- !u!195 &1318491032
 NavMeshAgent:
   m_ObjectHideFlags: 0

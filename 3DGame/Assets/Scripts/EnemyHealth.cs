@@ -11,11 +11,13 @@ public class EnemyHealth : MonoBehaviour
     public NavMeshAgent agent;
     public GameObject DeathParticles;
     public float Targeted;
+    public int MoneyValue;
     private void Update()
     {
         if (health <= 0)
         {
             Instantiate(DeathParticles, transform.position, Quaternion.identity);
+            GameObject.Find("Player").GetComponent<PlayerHealth>().Money += MoneyValue;
             Destroy(gameObject);
         }
         if (agent == null) { return; }
