@@ -22,7 +22,7 @@ public class PumpAction : MonoBehaviour
     float nextTimeToFire;
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || Input.GetAxis("Fire1") > 0.1f)
         {
             if (Time.time > nextTimeToFire)
             {

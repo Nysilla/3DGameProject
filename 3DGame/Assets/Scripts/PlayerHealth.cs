@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
     {
         MoneyText.text = "$" + Money.ToString();
         HealUI.SetActive(BeingHealed);
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Escape") || Input.GetKeyDown(KeyCode.Escape))
         {
             paused = !paused;
             Cursor.visible = paused;

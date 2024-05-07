@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = DefaultSpeed;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
             Jump = true;
         }

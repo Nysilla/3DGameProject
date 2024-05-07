@@ -20,4 +20,11 @@ public class MainMenuManager : MonoBehaviour
     {
         Application.Quit();
     }
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            PlayGame();
+        }
+    }
 }
