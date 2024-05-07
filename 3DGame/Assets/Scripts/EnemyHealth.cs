@@ -17,12 +17,27 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(DeathParticles, transform.position, Quaternion.identity);
-            GameObject.Find("Player").GetComponent<PlayerHealth>().Money += MoneyValue;
+            FindNearestPlayer(transform).GetComponent<PlayerHealth>().Money += MoneyValue;
             Destroy(gameObject);
         }
         if (agent == null) { return; }
-        agent.destination = GameObject.Find("Player").transform.position;
+        agent.destination = FindNearestPlayer(transform).transform.position;
         if (TMP == null) { return; }
         TMP.text = health.ToString();
+    }
+
+    public static GameObject FindNearestPlayer(Transform origin)
+    {
+        float distance = 0;
+        GameObject playerTemp = null;
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag("Player"))
+        {
+            if (Vector3.Distance(origin.position, g.transform.position) < distance || distance == 0)
+            {
+                distance = Vector3.Distance(origin.position, g.transform.position);
+                playerTemp = g;
+            }
+        }
+        return playerTemp;
     }
 }

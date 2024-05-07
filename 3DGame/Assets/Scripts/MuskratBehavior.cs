@@ -10,7 +10,7 @@ public class MuskratBehavior : MonoBehaviour
     float nextTimeToFire;
     private void Start()
     {
-        Player = GameObject.Find("Player").transform;
+        Player = EnemyHealth.FindNearestPlayer(transform).transform;
     }
 
     void Update()

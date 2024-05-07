@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if(Time.timeScale < 0.9f){
+            return;
+        }
         Vector3 moveDirection = (Input.GetAxis("Horizontal") * transform.right + Input.GetAxis("Vertical") * transform.forward)*speed;
         moveDirection.y = rb.velocity.y;
         if (Jump)

@@ -16,7 +16,7 @@ public class SparrowBehavior : MonoBehaviour
     float nextTimeToFire1;
     private void Start()
     {
-        Player = GameObject.Find("Player").transform;
+        Player = EnemyHealth.FindNearestPlayer(transform).transform;
         animator.SetBool("FlyingCuzAttack", true);
     }
 
@@ -27,7 +27,7 @@ public class SparrowBehavior : MonoBehaviour
 
     void Update()
     {
-        Vector3 direction = Player.position - transform.position;
+        Vector3 direction = EnemyHealth.FindNearestPlayer(transform).transform.position - transform.position;
         transform.LookAt(Player.position);
         float distance = Vector3.Distance(transform.position, Player.position);
         if (distance > 20) { return; }
