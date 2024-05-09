@@ -976,6 +976,7 @@ MonoBehaviour:
   - {fileID: 6976173136840266603, guid: 12e2a306f7b787d42a70ec20692b421c, type: 3}
   SummonDelay: 1
   Eye: {fileID: 4217559816410985968}
+  ScalingByDeaths: 0.1
 --- !u!95 &7155996699814328579
 Animator:
   serializedVersion: 5

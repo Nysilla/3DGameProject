@@ -7,6 +7,6 @@ public class LookAtPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(EnemyHealth.FindNearestPlayer(transform).transform.position);
+        transform.LookAt(EnemyHealth.FindNearestPlayer(transform).transform.position + Vector3.up);
     }
 }

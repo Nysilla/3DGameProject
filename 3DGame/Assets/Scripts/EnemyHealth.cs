@@ -18,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Instantiate(DeathParticles, transform.position, Quaternion.identity);
             FindNearestPlayer(transform).GetComponent<PlayerHealth>().Money += MoneyValue;
+            VariableManager.Instance.AnimalDeaths++;
             Destroy(gameObject);
         }
         if (agent == null) { return; }
