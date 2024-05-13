@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
     public int Money;
     public TextMeshProUGUI MoneyText;
 
+    public bool LoadNextScene;
+
     private void Start()
     {
         Invoke("NoAnim", 1);
@@ -58,6 +60,11 @@ public class PlayerHealth : MonoBehaviour
 
     private void Reset1()
     {
+        if (LoadNextScene)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            return;
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

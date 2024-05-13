@@ -17,7 +17,7 @@ public class FireTower : MonoBehaviour
     }
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length > 300f) { return; }
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length > VariableManager.Instance.MobCap) { return; }
         if (Time.time > nextTimeToFire && VariableManager.Instance.AnimalDeaths > 0)
         {
             Debug.Log(SummonDelay / Mathf.Pow(VariableManager.Instance.AnimalDeaths, ScalingByDeaths));
